@@ -1,0 +1,1 @@
+std::vector<bool> is not the same as a vector of bits; it's a vector of objects, each object being a single bit. Accessing its elements is slow compared to a proper bit vector. Using std::vector<bool> when you need a packed bit vector can lead to significant performance degradation, especially for large vectors.
